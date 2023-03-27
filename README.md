@@ -1,4 +1,10 @@
 # Voice-of-your-banking-need
+NAME: R Kirti Priyanka
+COLLEGE NAME:RAJALAKSHMI ENGINEERING COLLEGE 
+TEAM MEMBER : 1
+MENTOR: NONE
+MAIL ID : rksakura2003@gmail.com
+
 A speech to speech translation software for the disabled and people with language barriers. 
 The banking industry is a crucial one that has a big impact on the world economy. The incorporation of speech-to-speech translation capabilities is becoming more crucial as financial institutions continue to adjust to new technologies in order to improve customer experience and meet the requirements of people with impairments or linguistic challenges.
 
