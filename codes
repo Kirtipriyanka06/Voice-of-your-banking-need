@@ -1,0 +1,39 @@
+ !pip install SpeechRecognition
+
+import speech_recognition as sr
+
+filename = '/content/audiofile.wav'
+
+r = sr.Recognizer()
+# open the file
+with sr.AudioFile(filename) as source:
+    # listen for the data (load audio to memory)
+    audio_data = r.record(source)
+    # recognize (convert from speech to text)
+text = r.recognize_google(audio_data)
+print(text)
+
+
+!pip install translate
+
+from translate import Translator
+translator= Translator(to_lang="korean")
+translation = translator.translate(text)
+print(translation)
+
+
+
+!pip install gtts
+
+from gtts import gTTS
+text_to_say = translation
+language = "ko"
+gtts_object = gTTS(text = text_to_say,
+                   lang = language,
+                   slow = False)
+
+gtts_object.save("/content/gtts.wav")
+
+
+from IPython.display import Audio
+Audio("/content/gtts.wav")
